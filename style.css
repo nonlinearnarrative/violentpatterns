@@ -90,12 +90,15 @@ h3 {
 }
 
 .button {
+  background: #000;
   display: inline-block;
   font-size: 1em;
   padding: 1em 2em;
-  background: rgb(60, 100, 240);
   color: #000;
   margin: 0 0 2em;
+  box-shadow: 0 0 9rem rgb(60, 100, 240) inset;
+  color: #fff;
+  text-decoration: none;
 }
 
 @media (max-width: 900px) {
