@@ -1,0 +1,117 @@
+* { box-sizing: border-box }
+
+html,
+body {
+  margin: 0;
+}
+
+body {
+  background: #000;
+  color: #fff;
+  font-family: 'Algemeen', Arial, sans-serif;
+  text-align: center;
+  font-size: 2vw;
+  overflow-x: hidden;
+}
+
+h1,
+h2 {
+  font-size: 1.5em;
+  font-weight: normal;
+  padding: 0 0.5em;
+}
+
+h1,
+.announce {
+  text-transform: uppercase;
+  margin: 2em 1em;
+  margin-top: 3em;
+  transform: skewX(20deg);
+  font-size: 2.5em;
+  letter-spacing: -1px;
+}
+
+h1 {
+  margin-top: 1.5em;
+  margin-left: -0.2em;
+  width: 100%;
+}
+
+.announce {
+  color: rgb(60, 100, 240);
+  margin: 1.4em 0 1.5em;
+}
+
+svg {
+  margin: 1rem;
+}
+
+path,
+polygon {
+  fill: rgb(60, 100, 240);
+}
+
+iframe {
+  border: 0;
+  margin: 2rem 0 3rem;
+  width: 100%;
+  box-shadow: 0 0 5rem rgb(195, 155, 15);
+  -webkit-filter: invert(100%);
+  -moz-filter: invert(100%);
+  -o-filter: invert(100%);
+  -ms-filter: invert(100%);
+  filter: invert(100%);
+}
+
+p {
+  padding: 2em;
+  font-weight: lighter;
+}
+
+a {
+  color: #fff;
+}
+
+h3 {
+  margin: 0.5em 0;
+  color: rgb(60, 100, 240);
+}
+
+.left-align {
+  font-size: 0.7em;
+  line-height: 1.5;
+  box-shadow: 0 0 3rem rgb(60, 100, 240);
+  text-align: left;
+  padding: 3em 20%;
+}
+
+.nat {
+  font-size: 0.8em;
+}
+
+.button {
+  display: inline-block;
+  font-size: 1em;
+  padding: 1em 2em;
+  background: rgb(60, 100, 240);
+  color: #000;
+  margin: 0 0 2em;
+}
+
+@media (max-width: 900px) {
+  body {
+    font-size: 1.3rem;
+  }
+
+  h2 {
+    font-size: 1em;
+  }
+
+  .info {
+    padding: 3em 2em;
+  }
+
+  .announce {
+    font-size: 1.5em;
+  }
+}
