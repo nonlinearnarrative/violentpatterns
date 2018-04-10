@@ -75,6 +75,7 @@ a {
 h3 {
   margin: 0.5em 0;
   color: rgb(60, 100, 240);
+  font-weight: normal;
 }
 
 .left-align {
