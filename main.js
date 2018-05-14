@@ -1,5 +1,5 @@
 var svg = document.getElementById('violentpatterns')
-var flex = 465
+var flex = 250
 var sizes = []
 var textareaActive = false
 
@@ -89,8 +89,37 @@ function draw(regenerate = false) {
     letter.setAttributeNS(null, 'transform', 'translate(' + translate.x + ' ' + translate.y + ')')
     svg.appendChild(letter)
 
-    count ++
+    count += 1
   }
 }
 
-draw()
+let frameCount = 1
+let redrawInterval
+
+redraw = () => {
+  draw(true)
+
+  if (frameCount % 20 === 0) {
+    console.log(frameCount)
+    clearInterval(redrawInterval)
+    setTimeout(() => {
+      redrawInterval = setInterval(redraw, 50)
+    }, 1500)
+  }
+
+  frameCount += 1
+}
+
+redrawInterval = setInterval(redraw, 50)
+
+
+/*
+ * Programme toggles
+ */
+const paragraphs = document.querySelectorAll('.programme-line')
+paragraphs.forEach(line => {
+  line.onclick = () => {
+    line.querySelector('.arrow').classList.toggle('active')
+    document.getElementById(`programme-${line.dataset.target}`).classList.toggle('active')
+  }
+})
