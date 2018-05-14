@@ -25,15 +25,11 @@ h3 {
   padding: 1em 0;
 }
 
-h2 {
-  position: relative;
-  top: -1em;
-}
-
 svg {
   margin-top: 5vw;
   width: 90vw;
   margin-bottom: -40vw;
+  pointer-events: none;
 }
 
 path,
@@ -68,6 +64,7 @@ hr {
   color: #000;
   border: 3px solid #f00;
   text-decoration: none;
+  z-index: 300;
 }
 
 .section {
@@ -122,7 +119,7 @@ hr {
 }
 
 .more.active {
-  height: 5em;
+  height: 8em;
 }
 
 .arrow {
